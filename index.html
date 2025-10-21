@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn Quran</title>
+    <link rel="icon" type="image/x-icon" href="Image/18.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <!-- ✅ HEADER START -->
+    <div class="header-bg">
+      <!-- Desktop Topbar -->
+      <div class="topbar">
+        <ul>
+          <li><a href="#"><img src="Image/1.png" alt="" /><span>44 20 8144 4409</span></a></li>
+          <li><a href="#"><img src="Image/2.png" alt="" /><span>61 (2) 8003 5454</span></a></li>
+          <li><a href="#"><img src="Image/3.png" alt="" /><span>1 (310) 933-3319</span></a></li>
+          <li><a href="#"><img src="Image/4.png" alt="" /><span>92 (306) 333 9999</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <section>
+        <div class="container">
+          <div class="nav">
+            <div class="logo">
+              <a href="index.html"><img src="Image/hr-logo-white.svg" alt="" /></a>
+            </div>
+            <div class="links">
+              <a href="Quran.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="Services.html">SERVICES</a>
+              <a href="blog.html">BLOG</a>
+              <a href="Packages.html">PACKAGES</a>
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Mobile Navbar -->
+     
+<div class="mobile-nav">
+  <a href="index.html"><img src="Image/hr-logo-white.svg" alt="Logo"></a>
+  <button id="menu-btn"><i class="bi bi-list"></i></button>
+</div>
+
+<!-- 🟢 MOBILE MENU PANEL -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="Packages.html">Packages</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+      <!-- ✅ HERO SECTION -->
+      <section class="hero-section">
+        <div id="heroCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner container">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                  <img src="Image/happy-kids-reading-quran-kareem.webp" class="big-img" alt="slide1" />
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                  <p class="text-success fs-5 fw-semibold mb-2">قال النبي صلى الله عليه وسلم</p>
+                  <h1 class="fw-bold display-5 lh-base mb-3">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</h1>
+                  <p class="text-secondary fs-6 mb-4">The best amongst you is the one who learns the Qur'an and teaches it.</p>
+                  <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                   <a href="Packages.html"> <button class="btn btn-success rounded-pill px-4 py-2">Our Packages</button></a>
+                  <a href="#footer"> <button class="btn btn-outline-success rounded-pill px-4 py-2">Request Demo</button></a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                  <img src="Image/17.webp" class="big-img" alt="slide2" />
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                  <p class="text-success fs-5 fw-semibold mb-2">قال النبي صلى الله عليه وسلم</p>
+                  <h1 class="fw-bold display-5 lh-base mb-3">عَلِّمُوا الصَّبِيَّ الصَّلَاةَ ابْنَ سَبْعِ سِنِينَ</h1>
+                  <p class="text-secondary fs-6 mb-4">Seeking the religious knowledge is an obligation upon every Muslim.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                  <img src="Image/girl-and-boy-learning-quran.webp" class="big-img" alt="slide3" />
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                  <p class="text-success fs-5 fw-semibold mb-2">قال النبي صلى الله عليه وسلم</p>
+                  <h1 class="fw-bold display-5 lh-base mb-3">طْلُبُوا الْعِلْمَ مِنَ الْمَهْدِ اِلىَ اللَّهْدِ</h1>
+                  <p class="text-secondary fs-6 mb-4">Seek knowledge from the cradle to the grave.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="thumbs d-flex justify-content-center gap-3 mt-4">
+                <img src="Image/happy-kids-reading-quran-kareem.webp" alt="t0" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" onclick="activateThumb(this)">
+                <img src="Image/17.webp" alt="t1" data-bs-target="#heroCarousel" data-bs-slide-to="1" onclick="activateThumb(this)">
+                <img src="Image/girl-and-boy-learning-quran.webp" alt="t2" data-bs-target="#heroCarousel" data-bs-slide-to="2" onclick="activateThumb(this)">
+              </div>
+      </section>
+    </div>
+
+
+    <!-- sectoion 1 -->
+
+   <section class="mt-8 py-5">
+  <div class="container mt-4">
+    <div class="row text-center text-lg-start">
+      <h1 class="fw-bold" style="font-family: serif;">
+        Start
+        <strong style="color: rgb(216,182,0);">Learning Quran</strong>
+        <br />
+        Today In 3 Steps
+      </h1>
+      <h6 class="mt-3 text-secondary">
+        Register yourself or register your child with us today and take your
+        first free trial class.
+      </h6>
+    </div>
+
+    <div class="row align-items-center mt-5 gy-4">
+      <!-- Left side text -->
+      <div class="col-lg-8 order-1 order-lg-1">
+        <!-- Step 1 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="me-3 flex-shrink-0">
+            <img
+              src="Image/5.svg"
+              alt="Register"
+              class="img-fluid"
+              style="width: 50px;"
+            />
+          </div>
+          <div>
+            <h5 style="color: rgb(0,97,62);">One Click Registration</h5>
+            <p class="mb-0">
+              Simply
+              <a
+                href="#request"
+                style="text-decoration: none; color: rgb(216,182,0);"
+                >Click Here</a
+              >
+              which will take you to the registration page. You can register for
+              free online Quran classes by filling in your name and contact
+              information.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="me-3 flex-shrink-0">
+            <img
+              src="Image/6.svg"
+              alt="Trial"
+              class="img-fluid"
+              style="width: 50px;"
+            />
+          </div>
+          <div>
+            <h5 style="color: rgb(216,182,0);">Schedule Free Trial</h5>
+            <p class="mb-0">
+              Upon receiving your registration, we will contact you back to set
+              a convenient time for your
+              <a
+                href="#request"
+                style="text-decoration: none; color: rgb(0,97,62);"
+                >Free Quran Trial Classes</a
+              >
+              and give you an overview of our teaching process.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="d-flex align-items-start">
+          <div class="me-3 flex-shrink-0">
+            <img
+              src="Image/7.svg"
+              alt="Start class"
+              class="img-fluid"
+              style="width: 50px;"
+            />
+          </div>
+          <div>
+            <h5 style="color: rgb(0,97,62);">Start Taking Your First Class</h5>
+            <p class="mb-0">
+              Login to our
+              <a
+                href="contact.php"
+                style="text-decoration: none; color: rgb(216,182,0);"
+                >Contact page</a
+              >
+              with the provided credentials and start your first class with one
+              of our online Quran teachers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side image (moves below text on mobile) -->
+      <div class="col-lg-4 order-2 order-lg-2 text-center mt-4 mt-lg-0">
+        <img
+          src="Image/8.webp"
+          alt="Learning Quran"
+          class="img-fluid rounded shadow-sm"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--section 2  -->
+
+
+<section class="why-section mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text first on mobile -->
+      <div class="col-lg-8 order-1 order-lg-2">
+        <div class="card border-0">
+          <h1 class="fw-bold mb-4">
+            Why choose<br />
+            Learn <strong style="color: rgb(216,182,0);">Qura'an</strong> Academy
+          </h1>
+          <p class="mb-4">
+            We take responsibility for good results. We take you step by step with your children at
+            the highest level to learn to read the Quran online with tajweed. The comfort of home
+            and your selected timings, supervision of parents, and guidance of expert Quran teachers
+            make online Quran learning a lot easier. Therefore, you can rely on us.
+          </p>
+
+          <div class="icons mb-4">
+            <p><i class="bi bi-check-lg text-warning"></i> 3 days free trial classes</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Your desired timings & days</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Tajweed Quran word by word</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Female Quran Teachers for kids and women</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Monthly assessment of children's progress</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Fluent English speaking teachers</p>
+            <p><i class="bi bi-check-lg text-warning"></i> Student Web portal for lessons</p>
+          </div>
+
+          <div class="tag">
+            <a href="Services.html" class="btn text-white rounded-pill px-4 py-2 me-3" style="background-color: rgb(0,97,62);">Our Services</a>
+            <a href="#footer" class="btn btn-light rounded-pill px-4 py-2 text-dark">Register Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image second on mobile -->
+      <div class="col-lg-4 order-2 order-lg-1 text-center mt-4 mt-lg-0">
+        <div class="card border-0">
+          <img src="Image/9.webp" alt="Why Choose Learn Quran" class="img-fluid rounded shadow-sm" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- section3 -->
+
+<section class="how-we-teach mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- 🟢 Text Section -->
+      <div class="col-lg-4 order-1 order-lg-1 text-center text-lg-start mb-4 mb-lg-0">
+        <h1 class="fw-bold mb-3">
+          <strong>How we teach?</strong><br />
+          Watch Video
+        </h1>
+        <h6 class="text-secondary">
+          Don't know how it works? Watch our demo<br />
+          class video now.
+        </h6>
+      </div>
+
+      <!-- 🟢 Video Section -->
+      <div class="col-lg-8 order-2 order-lg-2 text-center">
+        <div class="card border-0">
+          <a
+            href="https://youtu.be/WIPO1MKwQ1c?feature=shared"
+            class="video-thumbnail d-block"
+            style="
+              background-image: url('Image/10.webp');
+              background-size: cover;
+              background-position: center;
+              border-radius: 20px;
+              height: 300px;
+            "
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--  carousel section -->
+
+<section style="margin-top: 150px;">
+  <div class="container">
+    <div class="row text-center">
+      <h1>
+        What <strong style="color: rgb(216,182,0);">People</strong> Say?
+      </h1>
+    </div>
+
+    <div class="row text-center mt-4">
+      <div class="card border-0">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+        >
+          <div class="carousel-inner my-5">
+            <!-- Slide 1 -->
+            <div class="carousel-item active text-center">
+              <img
+                class="testimonial-img"
+                src="Image/11.jpg"
+                alt="Mohammad Haneef"
+              />
+              <h3 class="text-success">Mohammad Haneef</h3>
+              <h6 style="color: rgb(222,193,37);">Lake Hithawa, USA</h6>
+              <div class="icons">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                anim magna sunt elit fore quem dolore labore illum veniam.
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item text-center">
+              <img
+                class="testimonial-img"
+                src="Image/14.jpg"
+                alt="Musarat Anam"
+              />
+              <h3 class="text-success">Musarat Anam</h3>
+              <h6 style="color: rgb(222,193,37);">Frankfurt, Germany</h6>
+              <div class="icons">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                anim magna sunt elit fore quem dolore labore illum veniam.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item text-center">
+              <img
+                class="testimonial-img"
+                src="Image/15.jpg"
+                alt="Shuja"
+              />
+              <h3 class="text-success">Shuja</h3>
+              <h6 style="color: rgb(222,193,37);">Liverpool, UK</h6>
+              <div class="icons">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                anim magna sunt elit fore quem dolore labore illum veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- section 4 -->
+<section style="margin-top: 150px;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+        <div class="card border-0">
+          <img
+            src="Image/19.webp"
+            alt="Islamic Courses"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+
+      <!-- Right Text -->
+      <div class="col-lg-8 col-md-12">
+        <div class="card border-0">
+          <h1>
+            Islamic
+            <strong style="color: rgb(216,182,0);">Courses</strong> <br />
+            That We Offer
+          </h1>
+
+          <h6 class="mt-3">
+            Embark on your journey with us into the world of Islam and Quran
+            Kareem. <strong style="color: #00613e;">In Sha Allah!</strong>
+          </h6>
+
+          <p class="mt-4">
+            Our courses are designed keeping in mind the age, and abilities of
+            learners. We have special courses for kids and for beginners in which
+            they start from Norani Qaida which is best guide to start learning the
+            reading of Quran. We do special emphasis on Tajweed rules from start.
+            From the first day, the teacher helps student to pronounce the word in
+            correct pronunciations so that when they move forward they recite in
+            Tajweed intuitively. In Quran reading course, online Quran tutors
+            teaches Quran word by word. We are well aware of the fact that online
+            teaching is different from teaching in person so all our Quran courses
+            are 1 to 1 to make sure student is paying attention to his lessons.
+            Our courses include Norani Qaida, Quran Reading, Advance Tajweed ,
+            Translation of Quran, Tafseer, Quran Memorization, and Arabic classes.
+            We also include Salah, Kalimas, Hadeeth and Dua's for kids in their
+            courses.
+          </p>
+
+          <div class="tag d-flex flex-wrap gap-3 mt-4">
+            <a
+              href="Services.html"
+              style="
+                color: #fff;
+                background: rgb(216, 182, 0);
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 12px 40px;
+                text-decoration: none;
+                border-radius: 50px;
+                transition: 0.5s;
+              "
+              >Our Services</a
+            >
+            <a
+              href="#footer"
+              style="
+                color: black;
+                background: rgb(248, 249, 250);
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 12px 40px;
+                text-decoration: none;
+                border-radius: 50px;
+                transition: 0.5s;
+              "
+              >Register Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+
+<section class="footer-section" id="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-lg-6 text-center text-lg-start footer-logo mb-4 mb-lg-0">
+        <a href="index.html">
+          <img src="Image/18.svg" alt="Learn Quran Logo" class="footer-brand" />
+        </a>
+        <p class="mt-3 footer-desc">
+          Learn Quran Academy is a Non-Partisan organization. We are not part of
+          any group, Islamic organization or mosque. We welcome all students
+          interested in learning Quran.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6">
+        <div class="footer-form">
+          <h4>Fill your details</h4>
+          <form>
+            <input type="text" class="form-control" placeholder="Name" />
+            <input type="email" class="form-control" placeholder="Email" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone with country code"
+            />
+            <button type="submit" class="btn submit-btn">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bottom-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- CONTACT -->
+        <div class="col-md-4 contact-info">
+          <h5>FEEL FREE TO CONTACT US</h5>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> UK: +44 808 531 0303</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> AUS: (61) 2 8003 5454</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> USA: (1) 310 933 3319</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> 92 (306) 333 9999</a></p>
+          <p><a href="mailto:info@learnquraan.co.uk"><i class="bi bi-envelope-fill"></i> info@learnquraan.co.uk</a></p>
+
+          <h5 class="mt-4">SOCIALIZE WITH US</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-skype"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-md-3 quick-links">
+          <h5>QUICK LINKS</h5>
+          <a href="About.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Packages.html">Packages</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Teaching Quality Assurance</a>
+          <a href="#">FAQ's</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- STUDENTS GALLERY -->
+        <div class="col-md-5">
+          <h5>STUDENTS GALLERY</h5>
+          <div class="gallery d-flex flex-wrap gap-2">
+            <img src="Image/8.webp" alt="">
+            <img src="Image/9.webp" alt="">
+            <img src="Image/13.webp" alt="">
+            <img src="Image/19.webp" alt="">
+            <img src="Image/children-learning-islam-namaz.webp" alt="">
+            <img src="Image/cute-kid-learning-quran.webp" alt="">
+            <img src="Image/footer-imgs.jpg" alt="">
+            <img src="Image/footr-img-1.jpg" alt="">
+            <img src="Image/footer-img-2.jpg" alt="">
+            <img src="Image/footer-img-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy mt-4 text-center">
+        © 2025 LearnQura'an Academy – A proud initiative of TechSoft Solutions,
+        serving globally since 2006.
+      </p>
+    </div>
+  </footer>
+</section>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+  });
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // ✅ Mobile Menu Toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const backBtn = document.getElementById("backBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        menuBtn.style.display = "none";
+        backBtn.style.display = "inline";
+      });
+
+      backBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuBtn.style.display = "inline";
+        backBtn.style.display = "none";
+      });
+
+      // ✅ Carousel thumbnail sync
+      const carouselEl = document.getElementById("heroCarousel");
+      const thumbs = document.querySelectorAll(".thumbs img");
+      carouselEl.addEventListener("slid.bs.carousel", (e) => {
+        thumbs.forEach((t, i) => t.classList.toggle("active", i === e.to));
+      });
+      thumbs.forEach((img, i) => {
+        img.addEventListener("click", () => {
+          const bsCarousel = bootstrap.Carousel.getInstance(carouselEl);
+          bsCarousel.to(i);
+        });
+      });
+    </script>
+  </body>
+</html>

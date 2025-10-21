@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="Image/18.svg" />
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="blog.css">
+  </head>
+<style>
+  /* 🌿 CONTACT SECTION BASE STYLE */
+.contact-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  color: #00613e;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+}
+
+.contact-form .btn-submit {
+  background-color: #00613e;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: #008a58;
+}
+
+.contact-image img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* 🌿 RESPONSIVE STYLING */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+
+  /* 🔹 Image goes below form */
+  .contact-section .contact-image {
+    order: 2 !important;
+  }
+
+  .contact-section .contact-form {
+    order: 1 !important;
+  }
+
+  .contact-image img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contact-form h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .contact-form .btn-submit {
+    width: 100%;
+  }
+}
+
+
+/* cards/* 🌿 CONTACT CARDS BASE STYLE */
+.contact-cards {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  padding: 25px 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.contact-card img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contact-card .contact-icon {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  margin: 10px 0 15px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-gold,
+.btn-green,
+.btn-blue,
+.btn-outline-blue {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Gold Button */
+.btn-gold {
+  background-color: #d4af37;
+  color: #fff;
+}
+.btn-gold:hover {
+  background-color: #b99329;
+}
+
+/* Green Button */
+.btn-green {
+  background-color: #00613e;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #008a58;
+}
+
+/* Blue Button */
+.btn-blue {
+  background-color: #0078d7;
+  color: #fff;
+}
+.btn-blue:hover {
+  background-color: #005fa3;
+}
+
+/* Outline Blue Button */
+.btn-outline-blue {
+  color: #0078d7;
+  border: 2px solid #0078d7;
+}
+.btn-outline-blue:hover {
+  background-color: #0078d7;
+  color: #fff;
+}
+
+/* 🌿 RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .contact-cards {
+    padding: 60px 30px;
+  }
+
+  .contact-card {
+    padding: 20px 15px;
+  }
+
+  .contact-card img,
+  .contact-card .contact-icon {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    padding: 50px 20px;
+  }
+
+  .contact-card {
+    margin-bottom: 20px;
+    padding: 25px 15px;
+  }
+
+  /* Each card takes full width */
+  .contact-cards .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-card p {
+    font-size: 0.95rem;
+  }
+
+  .btn-gold,
+  .btn-green,
+  .btn-blue,
+  .btn-outline-blue {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 20px 10px;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-card .contact-icon {
+    font-size: 36px;
+  }
+}
+ 
+</style>
+  
+
+  <body>
+        <div class="header-bg">
+      <!-- Desktop Topbar -->
+      <div class="topbar">
+        <ul>
+          <li><a href="#"><img src="Image/1.png" alt="" /><span>44 20 8144 4409</span></a></li>
+          <li><a href="#"><img src="Image/2.png" alt="" /><span>61 (2) 8003 5454</span></a></li>
+          <li><a href="#"><img src="Image/3.png" alt="" /><span>1 (310) 933-3319</span></a></li>
+          <li><a href="#"><img src="Image/4.png" alt="" /><span>92 (306) 333 9999</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <section>
+        <div class="container">
+          <div class="nav">
+            <div class="logo">
+              <a href="index.html"><img src="Image/hr-logo-white.svg" alt="" /></a>
+            </div>
+            <div class="links">
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="Services.html">SERVICES</a>
+              <a href="blog.html">BLOG</a>
+              <a href="Packages.html">PACKAGES</a>
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Mobile Navbar -->
+     
+<div class="mobile-nav">
+  <a href="index.html"><img src="Image/hr-logo-white.svg" alt="Logo"></a>
+  <button id="menu-btn"><i class="bi bi-list"></i></button>
+</div>
+
+<!-- 🟢 MOBILE MENU PANEL -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="Packages.html">Packages</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<!-- hero section -->
+
+ <section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- LEFT TEXT -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h4 class="arabic mb-3 text-success">عَلِّمُوا الصَّبِيَّ الصَّلَاةَ ابْنَ سَبْعِ سِنِينَ وَاضْرِبُوهُ عَلَيْهَا ابْنَ عَشْرٍ</h4>
+        <h2 class="eng-quote mb-4 text-success">
+          Teach a child to pray, at the age of seven, and punish him for refusing it at ten.
+
+        </h2>
+        <h3 class="about-title text-success">Contact us</h3>
+        <h5 class="academy-name mb-4 text-success">Learn Quran Academy</h5>
+        <p>
+If you have any questions or need any kind of information please use any of the methods below to contact us, we will be very happy to respond you.
+       
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-md-6 text-center">
+        <img src="Image/20.webp" alt="Learn Quran" class="about-img img-fluid shadow-lg rounded-4" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        </div>
+
+
+<!-- section 1 -->
+
+<section class="contact-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        
+        <!-- Left: Form -->
+        <div class="col-md-6 contact-form">
+          <h2>Contact Form</h2>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Full Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mobile <span class="text-danger">*</span></label>
+              <input type="tel" class="form-control" placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Country</label>
+              <input type="text" class="form-control" placeholder="Enter your country">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Details</label>
+              <textarea class="form-control" rows="3" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit mt-3">Submit</button>
+          </form>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-md-5 contact-image text-center">
+          <img src="Image/quran-female-teacher-online-student.webp" alt="Contact Image" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- cards -->
+
+
+  <section class="contact-cards">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <!-- UK -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" />
+            <p>+44 808 5310 303</p>
+            <a href="tel:+448085310303" class="btn btn-gold">Call Now</a>
+          </div>
+        </div>
+
+        <!-- Australia -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" />
+            <p>+61 2 8003 5454</p>
+            <a href="tel:+61280035454" class="btn btn-gold">Call Now</a>
+          </div>
+        </div>
+
+        <!-- USA -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" />
+            <p>+1 310 933 3319</p>
+            <a href="tel:+13109333319" class="btn btn-gold">Call Now</a>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <i class="bi bi-whatsapp contact-icon text-success"></i>
+            <p>+92 306 3339999</p>
+            <a href="https://wa.me/923063339999" target="_blank" class="btn btn-green">Message Now</a>
+          </div>
+        </div>
+
+        <!-- Skype -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <i class="bi bi-skype contact-icon text-info"></i>
+            <p>learnquraan</p>
+            <a href="#" class="btn btn-blue">Call Now</a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-2 col-sm-6">
+          <div class="contact-card">
+            <i class="bi bi-envelope-fill contact-icon text-info"></i>
+            <p>info@learnquraan.co.uk</p>
+            <a href="mailto:info@learnquraan.co.uk" class="btn btn-outline-blue">Send email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      
+
+
+
+<!-- trial session -->
+
+   <section class="trial-session py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-lg-9 mb-3 mb-lg-0">
+        <h2 class="fw-semibold mb-3">
+          Are you interested in <span class="fw-bold">Trial Session?</span>
+        </h2>
+        <p class="text-muted mb-0">
+          You can try our Free Trial Session, No Obligation Lessons to Evaluate our Quran Reading Service & Teachers. 
+          After the free lessons you can decide to continue or discontinue Learn Quran Online with us.!
+        </p>
+      </div>
+
+      <!-- Right Button -->
+      <div class="col-lg-3 text-lg-end text-center">
+        <a href="#footer" class="btn btn-golden px-4 py-2 fw-semibold rounded-pill">
+          Start Free Trial Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+       
+
+
+
+<!-- footer -->
+
+<section class="footer-section" id="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-lg-6 text-center text-lg-start footer-logo mb-4 mb-lg-0">
+        <a href="index.html">
+          <img src="Image/18.svg" alt="Learn Quran Logo" class="footer-brand" />
+        </a>
+        <p class="mt-3 footer-desc">
+          Learn Quran Academy is a Non-Partisan organization. We are not part of
+          any group, Islamic organization or mosque. We welcome all students
+          interested in learning Quran.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6">
+        <div class="footer-form">
+          <h4>Fill your details</h4>
+          <form>
+            <input type="text" class="form-control" placeholder="Name" />
+            <input type="email" class="form-control" placeholder="Email" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone with country code"
+            />
+            <button type="submit" class="btn submit-btn">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bottom-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- CONTACT -->
+        <div class="col-md-4 contact-info">
+          <h5>FEEL FREE TO CONTACT US</h5>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> UK: +44 808 531 0303</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> AUS: (61) 2 8003 5454</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> USA: (1) 310 933 3319</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> 92 (306) 333 9999</a></p>
+          <p><a href="mailto:info@learnquraan.co.uk"><i class="bi bi-envelope-fill"></i> info@learnquraan.co.uk</a></p>
+
+          <h5 class="mt-4">SOCIALIZE WITH US</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-skype"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-md-3 quick-links">
+          <h5>QUICK LINKS</h5>
+          <a href="About.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Packages.html">Packages</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Teaching Quality Assurance</a>
+          <a href="#">FAQ's</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- STUDENTS GALLERY -->
+        <div class="col-md-5">
+          <h5>STUDENTS GALLERY</h5>
+          <div class="gallery d-flex flex-wrap gap-2">
+            <img src="Image/8.webp" alt="">
+            <img src="Image/9.webp" alt="">
+            <img src="Image/13.webp" alt="">
+            <img src="Image/19.webp" alt="">
+            <img src="Image/children-learning-islam-namaz.webp" alt="">
+            <img src="Image/cute-kid-learning-quran.webp" alt="">
+            <img src="Image/footer-imgs.jpg" alt="">
+            <img src="Image/footr-img-1.jpg" alt="">
+            <img src="Image/footer-img-2.jpg" alt="">
+            <img src="Image/footer-img-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy mt-4 text-center">
+        © 2025 LearnQura'an Academy – A proud initiative of TechSoft Solutions,
+        serving globally since 2006.
+      </p>
+    </div>
+  </footer>
+</section>
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+  });
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // ✅ Mobile Menu Toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const backBtn = document.getElementById("backBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        menuBtn.style.display = "none";
+        backBtn.style.display = "inline";
+      });
+
+      backBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuBtn.style.display = "inline";
+        backBtn.style.display = "none";
+      });
+
+      // ✅ Carousel thumbnail sync
+      const carouselEl = document.getElementById("heroCarousel");
+      const thumbs = document.querySelectorAll(".thumbs img");
+      carouselEl.addEventListener("slid.bs.carousel", (e) => {
+        thumbs.forEach((t, i) => t.classList.toggle("active", i === e.to));
+      });
+      thumbs.forEach((img, i) => {
+        img.addEventListener("click", () => {
+          const bsCarousel = bootstrap.Carousel.getInstance(carouselEl);
+          bsCarousel.to(i);
+        });
+      });
+    </script>
+</html>

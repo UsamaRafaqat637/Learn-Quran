@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Packages</title>
+    <link rel="icon" type="image/x-icon" href="Image/18.svg" />
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="blog.css">
+  </head>
+
+  <style>
+    /* trial session */
+
+    /* * 🌙 Trial Section */ */
+.trial-session {
+  background-color: #00613e;
+  color: white;
+  border-radius: 16px;
+  margin-top: 60px;
+  padding: 40px 30px;
+}
+
+.trial-session h2 {
+  color: #00613e;
+}
+
+.trial-session .btn-golden {
+  background-color: #e3b61c;
+  color: #00613e;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.trial-session .btn-golden:hover {
+  background-color: #c9a116;
+  color: white;
+}
+
+/* 🌙 Responsive Trial Section */
+@media (max-width: 768px) {
+  .trial-session {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .trial-session h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .trial-session p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  .trial-session .btn-golden {
+    display: inline-block;
+    width: auto;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}
+/* section 1 */
+ /* 🌿 Section Styling */
+    .pricing-section {
+      position: relative;
+      background-color: #fff;
+      padding: 80px 0;
+      overflow: hidden;
+    }
+
+    .pricing-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url("pattern-bg.png") repeat;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .pricing-section .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 🌿 Card Styling */
+    .pricing-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .pricing-card .card-header {
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+    .pricing-card .card-body h5 {
+      color: #00613e;
+      font-weight: 600;
+    }
+
+    .pricing-card ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .pricing-card li {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .pricing-card .btn {
+      border-radius: 50px;
+      padding: 8px 24px;
+      font-weight: 600;
+    }
+
+    /* 🌿 Responsive Spacing */
+    @media (max-width: 992px) {
+      .pricing-card { margin-bottom: 30px; }
+    }
+
+    @media (max-width: 768px) {
+      .pricing-section { padding: 60px 20px; }
+      .pricing-card .card-header { font-size: 1rem; }
+      .pricing-card h5 { font-size: 1.1rem; }
+      .pricing-card li { font-size: 0.9rem; }
+    }
+
+    /* 🌿 Payment Logos */
+    .payment-logos img {
+      height: 130px;
+      margin: 8px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .payment-logos img:hover {
+      opacity: 1;
+    }
+  </style>
+
+  <body>
+        <div class="header-bg">
+      <!-- Desktop Topbar -->
+      <div class="topbar">
+        <ul>
+          <li><a href="#"><img src="Image/1.png" alt="" /><span>44 20 8144 4409</span></a></li>
+          <li><a href="#"><img src="Image/2.png" alt="" /><span>61 (2) 8003 5454</span></a></li>
+          <li><a href="#"><img src="Image/3.png" alt="" /><span>1 (310) 933-3319</span></a></li>
+          <li><a href="#"><img src="Image/4.png" alt="" /><span>92 (306) 333 9999</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <section>
+        <div class="container">
+          <div class="nav">
+            <div class="logo">
+              <a href="index.html"><img src="Image/hr-logo-white.svg" alt="" /></a>
+            </div>
+            <div class="links">
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="Services.html">SERVICES</a>
+              <a href="blog.html">BLOG</a>
+              <a href="Packages.html">PACKAGES</a>
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Mobile Navbar -->
+     
+<div class="mobile-nav">
+  <a href="index.html"><img src="Image/hr-logo-white.svg" alt="Logo"></a>
+  <button id="menu-btn"><i class="bi bi-list"></i></button>
+</div>
+
+<!-- 🟢 MOBILE MENU PANEL -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="Packages.html">Packages</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<!-- hero section -->
+
+ <section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- LEFT TEXT -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h4 class="arabic mb-3 text-success">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</h4>
+        <h2 class="eng-quote mb-4 text-success">
+          Seeking the religious knowledge is an obligation upon every Muslim..
+        </h2>
+        <h3 class="about-title text-success">Packages & Fee</h3>
+        <h5 class="academy-name mb-4 text-success">Learn Quran Academy</h5>
+        <p>
+You can choose the following schedules or a customized schedule as well which is not mentioned here. Weekends classes are possible as well with at fair price. There is special discount for siblings.
+        <p>
+          Choose your best suited per week plan below and then go for the free trial lesson for that. You can choose any of the following plans.
+
+35 GBP per Month
+5 Days in a Week
+20 Classes Per Month
+One to One Live Class
+30 Minutes/Live Session
+25 GBP per Month
+3 Days in a Week
+12 Classes Per Month
+One to One Live Class
+30 Minutes/Live Session
+20 GBP per Month
+        </p>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-md-6 text-center">
+        <img src="Image/20.webp" alt="Learn Quran" class="about-img img-fluid shadow-lg rounded-4" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        </div>
+
+
+<!-- section 1 -->
+
+<section class="pricing-section">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pricing-card h-100">
+            <div class="card-header bg-warning text-white text-center">
+              35 GBP per Month
+            </div>
+            <div class="card-body text-center">
+              <h5 class="mb-4">5 Days in a Week</h5>
+              <ul class="text-start px-4 mb-4">
+                <li><i class="bi bi-check2 text-warning me-2"></i>20 Classes Per Month</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>One to One Live Class</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>30 Minutes / Live Session</li>
+              </ul>
+              <a href="contact.html" class="btn btn-success">Get Free Trial</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pricing-card h-100">
+            <div class="card-header bg-warning text-white text-center">
+              25 GBP per Month
+            </div>
+            <div class="card-body text-center">
+              <h5 class="mb-4">3 Days in a Week</h5>
+              <ul class="text-start px-4 mb-4">
+                <li><i class="bi bi-check2 text-warning me-2"></i>12 Classes Per Month</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>One to One Live Class</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>30 Minutes / Live Session</li>
+              </ul>
+              <a href="contact.html" class="btn btn-success">Get Free Trial</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pricing-card h-100">
+            <div class="card-header bg-warning text-white text-center">
+              20 GBP per Month
+            </div>
+            <div class="card-body text-center">
+              <h5 class="mb-4">2 Days in a Week</h5>
+              <ul class="text-start px-4 mb-4">
+                <li><i class="bi bi-check2 text-warning me-2"></i>8 Classes Per Month</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>One to One Live Class</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>30 Minutes / Live Session</li>
+              </ul>
+              <a href="contact.html" class="btn btn-success">Get Free Trial</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pricing-card h-100">
+            <div class="card-header bg-success text-white text-center">
+              25 GBP per Month
+            </div>
+            <div class="card-body text-center">
+              <h5 class="mb-4">Weekend Classes</h5>
+              <ul class="text-start px-4 mb-4">
+                <li><i class="bi bi-check2 text-warning me-2"></i>8 Classes Per Month</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>One to One Live Class</li>
+                <li><i class="bi bi-check2 text-warning me-2"></i>30 Minutes / Live Session</li>
+              </ul>
+              <a href="contact.html" class="btn btn-success">Get Free Trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment logos -->
+      <div class="text-center mt-5">
+        <!-- <h6 class="text-muted mb-3">We Accept</h6> -->
+        <div class="payment-logos d-flex justify-content-center flex-wrap">
+          <img src="Image/we-accept-payments-logos.png" alt="Visa">
+          <!-- <img src="mastercard.png" alt="MasterCard">
+          <img src="paypal.png" alt="PayPal">
+          <img src="pay.png" alt="Pay">
+          <img src="amex.png" alt="Amex"> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+
+
+
+<!-- trial session -->
+
+   <section class="trial-session py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-lg-9 mb-3 mb-lg-0">
+        <h2 class="fw-semibold mb-3">
+          Are you interested in <span class="fw-bold">Trial Session?</span>
+        </h2>
+        <p class="text-muted mb-0">
+          You can try our Free Trial Session, No Obligation Lessons to Evaluate our Quran Reading Service & Teachers. 
+          After the free lessons you can decide to continue or discontinue Learn Quran Online with us.!
+        </p>
+      </div>
+
+      <!-- Right Button -->
+      <div class="col-lg-3 text-lg-end text-center">
+        <a href="#footer" class="btn btn-golden px-4 py-2 fw-semibold rounded-pill">
+          Start Free Trial Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+       
+
+
+
+<!-- footer -->
+
+<section class="footer-section" id="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-lg-6 text-center text-lg-start footer-logo mb-4 mb-lg-0">
+        <a href="index.html">
+          <img src="Image/18.svg" alt="Learn Quran Logo" class="footer-brand" />
+        </a>
+        <p class="mt-3 footer-desc">
+          Learn Quran Academy is a Non-Partisan organization. We are not part of
+          any group, Islamic organization or mosque. We welcome all students
+          interested in learning Quran.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6">
+        <div class="footer-form">
+          <h4>Fill your details</h4>
+          <form>
+            <input type="text" class="form-control" placeholder="Name" />
+            <input type="email" class="form-control" placeholder="Email" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone with country code"
+            />
+            <button type="submit" class="btn submit-btn">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bottom-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- CONTACT -->
+        <div class="col-md-4 contact-info">
+          <h5>FEEL FREE TO CONTACT US</h5>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> UK: +44 808 531 0303</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> AUS: (61) 2 8003 5454</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> USA: (1) 310 933 3319</a></p>
+          <p><a href="#"><i class="bi bi-telephone-fill"></i> 92 (306) 333 9999</a></p>
+          <p><a href="mailto:info@learnquraan.co.uk"><i class="bi bi-envelope-fill"></i> info@learnquraan.co.uk</a></p>
+
+          <h5 class="mt-4">SOCIALIZE WITH US</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-skype"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-md-3 quick-links">
+          <h5>QUICK LINKS</h5>
+          <a href="About.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Packages.html">Packages</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Teaching Quality Assurance</a>
+          <a href="#">FAQ's</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- STUDENTS GALLERY -->
+        <div class="col-md-5">
+          <h5>STUDENTS GALLERY</h5>
+          <div class="gallery d-flex flex-wrap gap-2">
+            <img src="Image/8.webp" alt="">
+            <img src="Image/9.webp" alt="">
+            <img src="Image/13.webp" alt="">
+            <img src="Image/19.webp" alt="">
+            <img src="Image/children-learning-islam-namaz.webp" alt="">
+            <img src="Image/cute-kid-learning-quran.webp" alt="">
+            <img src="Image/footer-imgs.jpg" alt="">
+            <img src="Image/footr-img-1.jpg" alt="">
+            <img src="Image/footer-img-2.jpg" alt="">
+            <img src="Image/footer-img-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy mt-4 text-center">
+        © 2025 LearnQura'an Academy – A proud initiative of TechSoft Solutions,
+        serving globally since 2006.
+      </p>
+    </div>
+  </footer>
+</section>
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+  });
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // ✅ Mobile Menu Toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const backBtn = document.getElementById("backBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        menuBtn.style.display = "none";
+        backBtn.style.display = "inline";
+      });
+
+      backBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuBtn.style.display = "inline";
+        backBtn.style.display = "none";
+      });
+
+      // ✅ Carousel thumbnail sync
+      const carouselEl = document.getElementById("heroCarousel");
+      const thumbs = document.querySelectorAll(".thumbs img");
+      carouselEl.addEventListener("slid.bs.carousel", (e) => {
+        thumbs.forEach((t, i) => t.classList.toggle("active", i === e.to));
+      });
+      thumbs.forEach((img, i) => {
+        img.addEventListener("click", () => {
+          const bsCarousel = bootstrap.Carousel.getInstance(carouselEl);
+          bsCarousel.to(i);
+        });
+      });
+    </script>
+</html>

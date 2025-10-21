@@ -1,0 +1,784 @@
+ 
+      body {
+        overflow-x: hidden;
+      }
+
+      /* 🔹 HEADER BACKGROUND */
+      .header-bg {
+      position: relative;
+      padding: 30px 0;
+      overflow: hidden;
+      background-image: url(Image//header-bg.webp);
+      background-size: contain,auto;
+      background-position-x: -290px,right;
+      background-position-y: top,bottom;
+      background-repeat: no-repeat,no-repeat;
+      }
+
+      /* 🔹 TOPBAR (desktop only) */
+      .topbar {
+        width: 45%;
+        text-align: right;
+        margin-left: auto;
+      }
+      .topbar ul {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        list-style: none;
+        padding-right: 50px;
+        background-color: #00613e;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .topbar li a span {
+        font-size: 12px;
+        color: white;
+      }
+
+      /* 🔹 NAVBAR DESKTOP */
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+      .nav .logo img {
+        height: 100px;
+      }
+      .nav .links {
+        display: flex;
+        gap: 40px;
+        border-bottom: 1px solid rgb(227, 182, 28);
+      }
+      .nav .links a {
+        color: rgb(68, 68, 68);
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .nav .links a:hover {
+        color: #00613e;
+      }
+
+      /* 🔹 MOBILE NAVBAR */
+      /* 🔹 Default: Hide Mobile Navbar on Desktop */
+.mobile-nav {
+  display: none;
+}
+
+/* 🔹 Show only on Mobile Screens */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00613e;
+    color: white;
+    z-index: 2000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+
+  .mobile-nav img {
+    height: 60px;
+  }
+
+  .mobile-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* ✅ Adjust hero for spacing */
+  .hero-section {
+    padding-top: 100px;
+  }
+}
+
+
+
+      /* 🔹 MOBILE MENU PANEL */
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background-color: #00613e;
+        color: white;
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+      }
+      .mobile-menu.active {
+        left: 0;
+      }
+      .mobile-menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 12px 0;
+        font-size: 18px;
+      }
+
+      /* 🔹 HERO SECTION */
+      .hero-section {
+        padding-top: 30px;
+      }
+      .big-img {
+        width: 90%;
+        max-width: 400px;
+      }
+      .carousel-item h1 {
+        font-size: 2rem;
+      }
+
+      /* 🔹 THUMBNAILS */
+      .thumbs img {
+        width: 70px;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      .thumbs img.active,
+      .thumbs img:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      /* 🔹 RESPONSIVE SETTINGS */
+      @media (max-width: 992px) {
+        .topbar {
+          display: none;
+        }
+        .nav {
+          display: none;
+        }
+        .mobile-nav {
+          display: flex;
+        }
+        .hero-section button {
+          display: none !important;
+        }
+        .carousel-item h1 {
+          font-size: 1.4rem;
+        }
+        .carousel-item p {
+          font-size: 0.9rem;
+        }
+
+        /* ✅ MOBILE BACKGROUND FIX */
+       /* ✅ Mobile View Hero Background Update */
+@media (max-width: 768px) {
+  .header-bg {
+    background-image: url("Image/header-bg.webp") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Optional: thoda padding niche tak stretch karne ke liye */
+  .hero-section {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+
+        .thumbs {
+          flex-wrap: wrap;
+          gap: 10px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+  }
+
+  .header-bg {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    background-image: url("Image/header-bg.webp") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .topbar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  nav, .nav, .navbar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  section.mt-8 h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  section.mt-8 h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  section.mt-8 .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.mt-8 .d-flex img {
+    margin-bottom: 10px;
+  }
+
+  section.mt-8 .col-lg-4 {
+    order: 2 !important; /* 👈 ensures image comes below text */
+  }
+
+  section.mt-8 .col-lg-4 img {
+    width: 90%;
+    border-radius: 15px;
+  }
+}
+/* section2 */
+
+/* ===== Why Section ===== */
+.why-section {
+  margin-top: 150px;
+}
+
+.why-section h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.why-section p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.why-section .icons p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.why-section .bi {
+  color: rgb(216,182,0);
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 991px) {
+  .why-section {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .why-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .why-section p {
+    font-size: 0.95rem;
+  }
+
+  .why-section img {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+
+  .why-section .icons {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .why-section .tag {
+    text-align: center;
+  }
+
+  /* 👇 Important — Text upar, Image neeche */
+  .why-section .col-lg-8 {
+    order: 1 !important;
+  }
+  .why-section .col-lg-4 {
+    order: 2 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .why-section p {
+    font-size: 0.9rem;
+  }
+
+  .why-section img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+/* section 3 */
+
+/* ===== HOW WE TEACH SECTION ===== */
+.how-we-teach {
+  margin-top: 150px;
+}
+
+.how-we-teach h1 {
+  font-size: 2.2rem;
+  color: #000;
+}
+
+.how-we-teach h6 {
+  font-size: 1rem;
+  color: #555;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 300px;
+  display: block;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* .video-thumbnail::after {
+  content: "\f144";
+  font-family: "Bootstrap-icons";
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.video-thumbnail:hover::after {
+  color: #d8b600;
+  transform: translate(-50%, -50%) scale(1.1);
+} */
+
+/* ✅ Responsive Styling */
+@media (max-width: 991px) {
+  .how-we-teach {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .how-we-teach h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .how-we-teach h6 {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .video-thumbnail {
+    height: 250px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-we-teach {
+    margin-top: 60px;
+  }
+
+  .how-we-teach h1 {
+    font-size: 1.6rem;
+  }
+
+  .video-thumbnail {
+    height: 220px;
+    border-radius: 12px;
+  }
+}
+
+/* carousel section */
+.testimonial-img {
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* 🟢 Text spacing */
+.testimonial-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 🟢 Responsive Design */
+@media (max-width: 768px) {
+  section {
+    margin-top: 80px !important;
+  }
+
+  .testimonial-img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .carousel-inner {
+    margin-top: 20px !important;
+  }
+}
+/* section 4 */
+/* 🟢 Responsive Styles */
+@media (max-width: 991px) {
+  section {
+    margin-top: 80px !important;
+  }
+
+  .col-lg-4 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .col-lg-8 h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .col-lg-8 h6 {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .col-lg-8 p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 15px;
+  }
+
+  .tag {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .col-lg-8 h1 {
+    font-size: 22px;
+  }
+
+  .col-lg-8 h6 {
+    font-size: 14px;
+  }
+
+  .col-lg-8 p {
+    font-size: 13px;
+  }
+
+  .tag a {
+    font-size: 11px !important;
+    padding: 10px 30px !important;
+  }
+}
+/* footer */
+
+/* 🌿 Desktop Footer (Professional Layout) */
+/* 🌿 MAIN FOOTER SECTION */
+.footer-section {
+      background: url(Image/bg-footer.svg);
+      color: white;
+      /* padding: 60px 0; */
+      position: relative;
+      border-top-left-radius: 80px;
+      background-repeat: no-repeat;
+    }
+
+/* 🌿 FOOTER LOGO */
+.footer-logo img {
+  width: 250px;
+  margin-bottom: 15px;
+  margin-left: 290px;
+  display: block;
+}
+
+/* 🌿 FOOTER FORM */
+.footer-form {
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+  color: #222;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-left: 200px;
+}
+
+.footer-form h4 {
+  color: #d4af37;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-form .form-control {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.footer-form .btn {
+  background-color: #004d34;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.footer-form .btn:hover {
+  background-color: #006645;
+}
+.footer-section p{
+      padding-left: 95px;
+    }
+
+/* 🌿 BOTTOM FOOTER */
+.bottom-footer {
+  background-color: rgb(0, 46, 30);
+  color: white;
+  padding: 60px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-footer h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bottom-footer a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.bottom-footer a:hover {
+  color: #dcbf00;
+  transform: translateX(3px);
+}
+
+.bottom-footer .social-icons a {
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 12px;
+  color: #dcbf00;
+  transition: 0.3s;
+}
+
+.bottom-footer .social-icons a:hover {
+  color: #fff;
+}
+
+.bottom-footer .gallery img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.bottom-footer .gallery img:hover {
+  transform: scale(1.05);
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+/* 🌿 TABLET RESPONSIVE (max-width: 992px) */
+@media (max-width: 992px) {
+  .footer-logo img {
+    margin: 0 auto 25px;
+    width: 220px;
+  }
+
+  .footer-form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .bottom-footer {
+    background: url("Image/bg-footer.svg") no-repeat center bottom;
+    background-size: cover;
+  }
+
+  .bottom-footer .gallery img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bottom-footer .contact-info,
+  .bottom-footer .gallery,
+  .bottom-footer .social-icons {
+    text-align: center;
+  }
+
+  .bottom-footer .social-icons {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+/* 🌿 MOBILE RESPONSIVE (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-section {
+    /* background: url("Image/bg-footer.svg") no-repeat center bottom; */
+    background-color: rgb(0,46,30);
+    background-size: cover;
+    padding: 40px 0;
+    border-top-left-radius: 0;
+  }
+
+  .footer-logo img {
+    width: 180px;
+    margin: 0 auto 20px;
+  }
+
+  .footer-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+
+  .footer-form h4 {
+    font-size: 18px;
+  }
+
+  .footer-form .btn {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .bottom-footer {
+    background: url("Image/bg-footer.svg") no-repeat center bottom;
+    background-size: cover;
+    background-attachment: scroll;
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+
+  .bottom-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .bottom-footer * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bottom-footer .gallery {
+    justify-content: center;
+  }
+
+  .bottom-footer .gallery img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+  }
+}
+
+/* 🌿 EXTRA SMALL MOBILE (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-section {
+    background: url("Image/bg-footer.svg") no-repeat center bottom;
+    background-size: cover;
+  }
+
+  .footer-form {
+    padding: 20px;
+  }
+
+  .footer-form h4 {
+    font-size: 16px;
+  }
+
+  .footer-form .form-control {
+    font-size: 14px;
+  }
+
+  .footer-form .btn {
+    font-size: 14px;
+  }
+
+  .bottom-footer .gallery img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+    
